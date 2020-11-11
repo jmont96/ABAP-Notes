@@ -187,6 +187,7 @@ Good for searching ranges using sorted results.</p>
 <li>For cluster tables, selection is limited to cluster key fields</li>
 <li>For pools, longer keys are needed than necessary</li>
 </ul>
+<p>Note: Can access data contained in pooler or clustered tabled with OPEN SQL, but NOT Native SQL</p>
 <p>Older systems may still have these, but its really not that important</p>
 <blockquote>
 <p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
