@@ -14,15 +14,15 @@
 <li>Define complex M dialogs</li>
 </ul>
 <h2 id="database-views">Database Views</h2>
-<p>A <strong>view</strong> is basically a join from several tables<br>
-A <strong>projection</strong> is hiding unimportant data<br>
+<p>A <strong>view</strong> is basically a join from several tables - has a join condition<br>
+A <strong>projection</strong> is hiding unimportant data - has a selection condition to hide fields<br>
 A <strong>display</strong> is data records that satisfy certain conditions</p>
 <p>The data in a view can be displayed just like a table data in extended table maintenance.</p>
 <p>The most common thing we do with views is define how to join tables together and how we want to design how the data is shown to the user.</p>
 <p>Must define a join condition for the view to make it work (WHERE)</p>
 <p>You can include entire tables in views.</p>
 <p>Basically just a select and join statement lol idk why they call it a view</p>
-<p>With a view</p>
+<p>With a view:</p>
 <ul>
 <li>Don’t need to specify join in your Select statement, its automatically built into the view.</li>
 <li>You have a ‘pre-prepared’ part of a select statement in a view that can be treated like a table</li>
@@ -33,7 +33,7 @@ A <strong>display</strong> is data records that satisfy certain conditions</p>
 </code></pre>
 <p>To define a view:</p>
 <ul>
-<li>define the tables and fields you need to be included in the view
+<li>Define the tables and fields you need to be included in the view
 <ul>
 <li>This should be from multiple tables using different keys</li>
 </ul>
@@ -42,7 +42,10 @@ A <strong>display</strong> is data records that satisfy certain conditions</p>
 <li>Finally, allow buffering in the technical settings if you please</li>
 </ul>
 <h2 id="maintenance-views">Maintenance Views</h2>
-<p>Application object - data distributed across more than one table</p>
+<p>Can’t use on SAP tables.</p>
+<p>Used to make subsequent writes on multiple tables.</p>
+<p>Needs to have tables that are linked by a foreign key.</p>
+<p>Application object - data distributed across more than one table.</p>
 <p>You can maintain AO’s by using a maintenance view.</p>
 <p>A maintenance view automatically distributes data across underlying tables.</p>
 <p>All tables used must be linked with a foreign key, and the join conditions are always derived from these keys. you cannot manually enter them like in a DB view.</p>
@@ -73,7 +76,7 @@ A <strong>display</strong> is data records that satisfy certain conditions</p>
 <li>Activate View</li>
 </ol>
 <h2 id="maintenance-view-dialogs">Maintenance View Dialogs</h2>
-<p>To create, you must speficy these params</p>
+<p>To create, you must specify these params</p>
 <ul>
 <li>Function group</li>
 <li>Auth group</li>
@@ -81,6 +84,8 @@ A <strong>display</strong> is data records that satisfy certain conditions</p>
 <li>Maintenance Screens</li>
 <li>Recording Routine</li>
 </ul>
+<p>Advantage: simple maintenance dialogs can be built in a short period of time.<br>
+Disadvantage: no async update.</p>
 <h2 id="view-clusters">View Clusters</h2>
 <p>Used for combining multiple maintenance dialogs into one maintenance unit.</p>
 <p>Maintenance views can only maintain tables that a 1:1 relationship with one another, but you can use clusters to maintain tables than have an N:M relationship.</p>
