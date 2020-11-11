@@ -92,6 +92,76 @@
 </ul>
 </li>
 </ul>
+<h2 id="internal-tables">Internal Tables</h2>
+<p>Hashed Tables:<br>
+Uses a hash function to find a single row by its unique key. Typically used for finding small amount of data in a large table.</p>
+<p>Sorted Tables<br>
+A sorted table is sorted by the key and performs a binary serach to read items.<br>
+Good for searching ranges using sorted results.</p>
+<p>Tables can be generically defined by:</p>
+<ul>
+<li>Index table
+<ul>
+<li>Standard</li>
+<li>Sorted</li>
+</ul>
+</li>
+<li>Hashed Table
+<ul>
+<li>Hashed table</li>
+</ul>
+</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Table Kind</th>
+<th>Standard Table</th>
+<th>Sorted Table</th>
+<th>Hashed Table</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Index Access</td>
+<td>+</td>
+<td>+</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Key Access</td>
+<td>+</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Key Unique?</td>
+<td>Non-unique</td>
+<td>Both</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Uses</td>
+<td>Mainly Index Access</td>
+<td>Mainly Key Access</td>
+<td>ONLY Key Access</td>
+</tr>
+</tbody>
+</table><p>To create a work area automatically matched to a table (deprecated):</p>
+<pre class=" language-abap"><code class="prism  language-abap"><span class="token keyword">DATA</span> it_1 <span class="token keyword">TYPE</span> table_type <span class="token keyword">WITH</span> <span class="token keyword">HEADER</span> <span class="token keyword">LINE</span><span class="token punctuation">.</span>
+</code></pre>
+<p>This will define the table it_1[] and the structure it_1.</p>
+<p>To do with separately (safer), create a work area structure:</p>
+<pre class=" language-abap"><code class="prism  language-abap"><span class="token keyword">DATA</span><span class="token punctuation">:</span> it_1 <span class="token keyword">TYPE</span> table_type<span class="token punctuation">,</span>
+	  s_1 <span class="token keyword">LIKE</span> <span class="token keyword">LINE</span> <span class="token keyword">OF</span> it_1<span class="token punctuation">.</span>
+</code></pre>
+<p>To read one row from an internal table into a structure work area:</p>
+<pre class=" language-abap"><code class="prism  language-abap"><span class="token keyword">READ</span> <span class="token keyword">TABLE</span> it_table <span class="token keyword">INTO</span> struct<span class="token punctuation">.</span>
+</code></pre>
+<p>Moving fields from table to table:</p>
+<pre class=" language-abap"><code class="prism  language-abap"><span class="token keyword">MOVE-CORRESPONDING</span> it_1 <span class="token keyword">TO</span> it_2<span class="token punctuation">.</span>
+</code></pre>
 <h2 id="cluster-tables-and-pool-tables">Cluster Tables and Pool Tables</h2>
 <p>SAP is trying to kinda phase these out… won’t find them in newer systems. They are made up of multiple tables in the dictionary that then are combined in the DB.</p>
 <p><strong>Cluster Tables</strong></p>
