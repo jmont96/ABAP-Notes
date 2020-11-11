@@ -23,13 +23,17 @@
 </li>
 </ul>
 <p>Fixed values are stored in what is called a Value Table.</p>
+<p>Value tables are used to propose foriegn keys for a table.</p>
 <p>Having a value table will NOT provide a search help or validation for input</p>
 <h2 id="foreign-keys--input-checks">Foreign keys &amp; Input Checks</h2>
-<p>A foreign key is a key field that is mapped to another table.<br>
-Foreign keys are needed to map to a check table.<br>
-A check table is used to check key fields.<br>
-The field of the foreign key to be checked is called a check field.<br>
-A check table that maps to the table’s fixed values will create a search help that is usable on the front-end.</p>
+<ul>
+<li>A foreign key is a key field that is mapped to another table.</li>
+<li>Foreign keys are needed to map to a check table.</li>
+<li>A check table is used to check key fields.</li>
+<li>The field of the foreign key to be checked is called a check field.</li>
+<li>A check table that maps to the table’s fixed values will create a search help that is usable on the front-end.</li>
+</ul>
+<p>Foreign key proposals come from a value table located in the domain. This is the table with fixed values.</p>
 <p>Must have same domain to check a field from a check table field</p>
 <h2 id="cardinalitymultiplicity">Cardinality/Multiplicity</h2>
 <ul>
