@@ -116,12 +116,13 @@ What would happen if I nested three sturctures with .include?</p>
 <li>Select ‘table type’ radio button nad continue</li>
 <li>Give a line type</li>
 <li>Select initialization and access info in tab</li>
-<li>Select a promary key</li>
+<li>Select a primary key</li>
 </ol>
 <h2 id="deep-structures">DEEP STRUCTURES</h2>
 <p>Has a complex component in one of the field components<br>
 like a table, structure, or string.</p>
 <p>To define with complex component attribute, you need to go to extras -&gt; enhancements to make it enhancable.</p>
+<p>A structure can have a view in it. It treats a view like another strcutre basically.</p>
 <h2 id="type-group">Type group</h2>
 <p>Type pools like icons… don’t really use these lol.</p>
 <ul>
