@@ -114,7 +114,7 @@
 <ul>
 <li>No joins, group by, order by and other functionalities</li>
 <li>No table appends</li>
-<li>For cluster tables, selection is limited to clster key feilds</li>
+<li>For cluster tables, selection is limited to cluster key fields</li>
 <li>For pools, longer keys are needed than necessary</li>
 </ul>
 <p>Older systems may still have these, but its really not that important</p>
