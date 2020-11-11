@@ -86,7 +86,7 @@ What would happen if I nested three sturctures with .include?</p>
 </ul>
 <p>Special Table Types</p>
 <ul>
-<li>Generic table types
+<li>Generic table types (Index tables)
 <ul>
 <li>Define only some attributes of an internal table
 <ul>
@@ -105,7 +105,7 @@ What would happen if I nested three sturctures with .include?</p>
 <li>Range Tables
 <ul>
 <li>Used for complex areas in an internal table</li>
-<li>Row type consists of Low, High, Option (operator) and Sign</li>
+<li>Row type consists of Low, High, Option (operator) and Sign (like SELECT-OPTIONS)</li>
 </ul>
 </li>
 </ul>
@@ -120,7 +120,7 @@ What would happen if I nested three sturctures with .include?</p>
 </ol>
 <h2 id="deep-structures">DEEP STRUCTURES</h2>
 <p>Has a complex component in one of the field components<br>
-like a table or something.</p>
+like a table, structure, or string.</p>
 <p>To define with complex component attribute, you need to go to extras -&gt; enhancements to make it enhancable.</p>
 <h2 id="type-group">Type group</h2>
 <p>Type pools like icons… don’t really use these lol.</p>
