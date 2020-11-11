@@ -34,6 +34,7 @@
 <ul>
 <li>Most resource-intensive process listed above</li>
 <li>Saves a lot of time fixing other complications that result from other methods</li>
+<li>Conversion can only happen if you’re trying to shrink a table</li>
 <li>Steps
 <ul>
 <li>The system creates an inactive version of the table in the ABAP Dictionary</li>
