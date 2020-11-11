@@ -3,7 +3,7 @@
 
 ---
 
-<h2 id="oo-events">OO Events</h2>
+<h1 id="oo-events">OO Events</h1>
 <p>Objectives</p>
 <ul>
 <li>Implement event-controlled methods</li>
