@@ -5,10 +5,10 @@
 
 <h1 id="programming-interfaces">Programming Interfaces</h1>
 <h2 id="user-interface-overview">User Interface Overview</h2>
-<p>GUI Title - translatable title in the top of the window<br>
-SET TITLEBAR ‘title’ -&gt; create ‘title’ in the application by doubel clicking on it</p>
-<p>GUI Status - a menu bar in the interface<br>
-Includes:</p>
+<p>We can use GUI Statusus and GUI Titles to add some custom functionlity to a classical report screen.</p>
+<h2 id="gui-status">GUI Status</h2>
+<p>A menu bar in the interface providing functions to the user.</p>
+<p>Includes:</p>
 <ul>
 <li>Menu bar
 <ul>
@@ -32,17 +32,22 @@ Includes:</p>
 </li>
 </ul>
 <p>A context menu element can be used in multiple GUI statuses</p>
-<p>SET PF-STATUS ‘name’ -&gt; then create ‘name’ by double clicking</p>
-<p>Status can be a normal screen, a dialog box or a context menu.</p>
-<p>Function Keys<br>
-We can define shortcut function keys to make different keys do stuff. For example, we could make F1 mean ‘T’ and then that will bring up the Time dialog… we could also link this to an Icon.</p>
-<p>GUI Title<br>
-We cna set the GUI title in a PBO module of a screen:</p>
+<p>To set a GUI Status:</p>
+<pre class=" language-abap"><code class="prism  language-abap"><span class="token keyword">SET</span> <span class="token keyword">PF-STATUS</span> <span class="token string">'name'</span><span class="token punctuation">.</span>
+</code></pre>
+<p>We can then create the status (if it doesn’t exist) by using forward navigation on the name.</p>
+<p>A Status can be a normal screen, a dialog box or a context menu.</p>
+<p>A Status is created in the menu painter within the ABAP workbench.</p>
+<h2 id="function-keys">Function Keys</h2>
+<p>We can define shortcut function keys to make different keys do stuff. For example, we could make F1 mean ‘T’ and then that will bring up the Time dialog… we could also link this to an Icon.</p>
+<h2 id="gui-title">GUI Title</h2>
+<p>A translatable title at the top of the transaction.</p>
+<p>We can set the GUI title in a PBO module of a screen:</p>
 <pre class=" language-abap"><code class="prism  language-abap"><span class="token keyword">SET</span> <span class="token keyword">TITLEBAR</span> <span class="token string">'title'</span><span class="token punctuation">.</span>
 <span class="token keyword">SET</span> <span class="token keyword">TITLEBAR</span> <span class="token keyword">WITH</span> variable<span class="token punctuation">.</span>
 </code></pre>
-<p>GUI Status Function Processing<br>
-The OK field of the screen holds the function that is being called in the GUI Status</p>
+<h2 id="gui-status-function-processing">GUI Status Function Processing</h2>
+<p>The OK field of the screen holds the function that is being called in the GUI Status</p>
 <p>You can find the called function by using a case statement targeting the ok_code in PAI:</p>
 <pre class=" language-abap"><code class="prism  language-abap"><span class="token keyword">DATA</span> ok_code <span class="token keyword">LIKE</span> sy<span class="token token-operator punctuation">-</span>ucomm<span class="token punctuation">.</span>
 
