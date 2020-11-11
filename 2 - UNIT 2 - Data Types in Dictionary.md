@@ -32,6 +32,7 @@
 </li>
 <li>Domains cannot be used directly in programs or tables</li>
 <li>Makes up the technical setting’s format and output characteristics</li>
+<li>Cannot be used to build line types for a table</li>
 </ul>
 <p>Data Elements</p>
 <ul>
