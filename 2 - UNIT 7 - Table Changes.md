@@ -30,6 +30,19 @@
 </ul>
 </li>
 </ul>
+<p>Table Change Types:</p>
+<ul>
+<li>Table Growth
+<ul>
+<li>Use ALTER TABLE</li>
+</ul>
+</li>
+<li>Table shrinkage
+<ul>
+<li>Use table conversions</li>
+</ul>
+</li>
+</ul>
 <p>Conversions</p>
 <ul>
 <li>Most resource-intensive process listed above</li>
