@@ -40,6 +40,23 @@
 <li>Specify technical properties using domains</li>
 <li>Semantic info includes documentation, labels, input history, etc.</li>
 </ul>
+<h2 id="complete-and-incomplete-types">Complete and Incomplete Types</h2>
+<p>Complete (Fixed length in ()):</p>
+<ul>
+<li>D (8 chars)</li>
+<li>T (6 chars)</li>
+<li>I (4 bytes)</li>
+<li>F (8 bytes)</li>
+<li>String (dynamic chars)</li>
+<li>XString (dynamic bytes)</li>
+</ul>
+<p>Incomplete (default in ())</p>
+<ul>
+<li>C (1 char)</li>
+<li>N (1 char)</li>
+<li>P (8 bytes)</li>
+<li>X (1 byte)</li>
+</ul>
 <h2 id="local-objects">Local Objects</h2>
 <p>Packaging vs local object</p>
 <ul>
