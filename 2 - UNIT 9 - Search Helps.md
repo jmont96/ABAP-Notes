@@ -12,7 +12,8 @@
 <li>Create append search helps to enchance basic search helps</li>
 <li>Implement search helps exits</li>
 </ul>
-<h2 id="creating-search-helps">Creating Search helps</h2>
+<h2 id="creating-search-helps">Creating Search Helps</h2>
+<p>Can assign a search help to a data element, structure or a table field.</p>
 <p>Search help is a list of possible values that could fill the input.</p>
 <p>A search helps controls data consistency and reduces user error</p>
 <p>Design</p>
@@ -38,6 +39,13 @@
 <li>All columns are searched for the entered string</li>
 </ul>
 </li>
+</ul>
+<h2 id="assigning-search-helps">Assigning Search Helps</h2>
+<p>What can I assign a search help to?</p>
+<ul>
+<li>Structure field</li>
+<li>Data element</li>
+<li>Check table</li>
 </ul>
 <h2 id="collective-search-helps">Collective Search Helps</h2>
 <p>Combine several search paths.</p>
