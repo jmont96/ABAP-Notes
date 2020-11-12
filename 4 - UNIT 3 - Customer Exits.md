@@ -5,10 +5,10 @@
 
 <h1 id="customer-exits">Customer Exits</h1>
 <h2 id="enhancement-projects">Enhancement Projects</h2>
-<p>Implementation of customer exits that are used to create enhancements<br>
-To create an enhancement:</p>
+<p>Implementation of customer exits that are used to create enhancements.</p>
+<p>To create an enhancement:</p>
 <ol>
-<li>plan out needed enhancements</li>
+<li>Plan out needed enhancements</li>
 <li>Programmers combine these in SAP enhancements</li>
 <li>Programmers document their enhancements</li>
 </ol>
@@ -16,7 +16,7 @@ To create an enhancement:</p>
 <ol>
 <li>Create enhanecement project in CMOD</li>
 <li>Choose the SAP enhancements that you want to use</li>
-<li>Edit individual componetsn using the project management function</li>
+<li>Edit individual components using the project management function</li>
 <li>Document the entire project</li>
 <li>Activate the project</li>
 </ol>
@@ -40,24 +40,26 @@ Loop in System -&gt; status -&gt; double-click proram name Call customer-functio
 <p>Implemetating Program Exit<br>
 Choose component and change it, then add your include for the exit program, then add your code in the include program</p>
 <h2 id="function-group-structure">Function Group Structure</h2>
-<p><strong>SAPL</strong> is the naming convention for a program that is a function group<br>
-Top include is for global data<br>
-function UXX  is an include file full of include files<br>
-each one of those include files is a function module<br>
-Exits usually start with LX or ZX<br>
-Exits will enhance the current data or function module that exists in the function group program</p>
+<p><strong>SAPL</strong> is the naming convention for a program that is a function group</p>
+<ul>
+<li>Top include is for global data</li>
+<li>Function UXX  is an include file full of include files</li>
+<li>Each one of those include files is a function module</li>
+<li>Exits usually start with LX or ZX</li>
+<li>Exits will enhance the current data or function module that exists in the function group program</li>
+</ul>
 <p>Subroutines are in F01<br>
 PBO - O01<br>
 PAi - I01<br>
 E01 - Events<br>
 U01 - Exits</p>
-<p>Can’t put a subroutine inside of a function itself</p>
+<p>Can’t put a subroutine inside of a function itself.</p>
 <h2 id="menu-exits">Menu Exits</h2>
 <p>Overview:</p>
 <ul>
 <li>A customer function in a menu of a GUI status that allows for customer functionality</li>
 <li>These can be seen in the dropdown list of a specified menu</li>
-<li>To privude menu exits, SAP devs must add function codes that begin with ‘+’ … Example: (+ABC)</li>
+<li>To provide menu exits, SAP devs must add function codes that begin with ‘+’ … Example: (+ABC)</li>
 <li>Same calling of function, but put it into a CASE using the ok_code</li>
 </ul>
 <p>To use a menu exit:</p>
