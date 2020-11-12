@@ -73,6 +73,7 @@
 <li>I01: PAI Module</li>
 <li>O01: PBO Module</li>
 </ul>
+<p>Note: A program that starts with SAPM will be defaulted to a module pool program.</p>
 <h2 id="intro-to-screen-programming">Intro to Screen Programming</h2>
 <p>A screen is a container of elements that we want to display through input and/or output fields.</p>
 <p>Advantages</p>
