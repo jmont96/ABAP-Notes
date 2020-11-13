@@ -48,7 +48,7 @@
 <ul>
 <li>Making modication easier</li>
 <li>Records changes at more detailed level</li>
-<li>Records changes in a speara lyaer making a reset much easier for rollbacks</li>
+<li>Records changes in a separate layer making a reset much easier for rollbacks</li>
 </ul>
 <p>How does the assistant work?</p>
 <p>The assistant keeps source code in a completely different place than the modification code (mod layer and source layer).</p>
